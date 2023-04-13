@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://portal.supergeeks.school/">
+</head>
+<body>
+    
+    <h1>Formulário</h1>
+
+    <form>
+
+        Nome: <input type="text" name="nome" value="jotta" disabled>
+        <br> <br>
+        Sobrenome: <input type="text" name="Sobrenome" placeholder="Digite seu sobrenome">
+        <br> <br>
+        Senha: <input type="password" name="senha" maxlength="8" required>
+        <br> <br>
+        Email: <input type="email" name="email" value="dossantosjoaopedro60@gmail.com" readonly>
+        <br> <br>
+        Numero: <input type="number" name="numero" min="2" max="12">
+        <br> <br>
+        Valor: <input type="range" name="valor" min="0" max="100" value="0"> <br>
+        <br> <br>
+        Gênero: <br>
+        <input type="radio" name="genero" checked> Masculino <br>
+        <input type="radio" name="genero"> Feminino
+        <br> <br>
+        Inter:<br>
+        <input type="checkbox" name="colorado" checked> colorado<br>
+        <input type="checkbox" name="internacional"> internacional
+        <br> <br>
+        Cor: <input type="color" name="cor">
+        <br> <br>
+        Data: <input type="date" name="data">
+        <br> <br>
+        Data e horário: <input type="datetime-local" name="datahorario">
+        <br> <br>
+        Arquivo: 
+        <input type="file" nome="arquivo">
+        <br> <br>
+        Selecionar Comida:
+        <select>
+            <option name="churrasco">Churrasco</option>
+            <option name="pizza">Pizza</option>
+            <option name="batatafrita">Batata Frita</option>
+        </select>
+        <br> <br>
+        Descrição: <br> 
+        <textarea name="descricao"></textarea>
+        <br> <br>
+        <input type="submit" value="Enviar">
+        
+    </form>
+
+        <!--
+
+            value       (colocar um valor padrão)
+            readonly    (apenas ler o campo)
+            disabled    (o campo fica desativado)
+            maxlength   (delimite o tamnho do texto)
+            min/max     (delimite  campos numéricos)
+            placeholder (insere descrição no campo)
+            required    (torna o campo obrigatório)
+            checked     (deixa o campo marcado por padrão)
+            
+
+        -->
+        <br>
+        Retorne para <a href="index.html">Aula</a>
+</body>
+</html>
