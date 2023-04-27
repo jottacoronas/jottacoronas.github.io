@@ -1,0 +1,21 @@
+div{
+    background-color: darkslateblue;
+    color: crimson;
+    height: 18px;
+    width: 62px;
+    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* margin: 20px 30px 40px 50px
+cima, direita, baixo, esquerda */
+
+
+body{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
