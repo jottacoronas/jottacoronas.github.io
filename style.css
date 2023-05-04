@@ -1,21 +1,30 @@
-div{
-    background-color: darkslateblue;
-    color: crimson;
-    height: 18px;
-    width: 62px;
-    padding: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    text-align: center;
-    font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;
+body{
+    background-color: darkslategrey;
+    color: gold;
+    font-size: 20px;
 }
 
-/* margin: 20px 30px 40px 50px
-cima, direita, baixo, esquerda */
-
-
-body{
-    font-size: 12px;
+div{
+    background-color: grey;
+    border-radius: 0 15px;
+    border-left: 5px dashed lightgrey;
+    border-bottom: 5px dashed lightgrey;
+    display: inline-block;
+    font-size: 20px;
+    margin: 20px 50px 20px 0px;
+    padding: 15px 0;
+    text-align: center;
+    width: 120px;
+    color: lightgrey;
     font-family: Arial, Helvetica, sans-serif;
+    
+
+}
+
+img{
+    width: 120px;
+    border-radius: 50%;
+    border: 15px dotted greenyellow;
+    padding: 4px;
+    margin: 15px 0;
 }
