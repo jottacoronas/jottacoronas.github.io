@@ -1,0 +1,73 @@
+div.primeira{
+    background-color: chocolate;
+    border: 5px dashed black;
+    text-align: center;
+    padding: 5%; 
+    margin: 20px 0;
+
+}
+
+.primeira:hover{
+    background-color: aquamarine;
+}
+
+
+div.segunda{
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding: 5%;
+    margin: 20px 0;
+}
+
+div.terceira{
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding: 5%;
+    margin: 20px 0;
+}
+
+#borda{
+    border-radius: 10px;    
+}
+
+#cor{
+    color: aqua;
+}
+
+#metade{
+    width: 50%;
+
+}
+
+div.familia{
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding: 5%;
+    margin: 20px 0;
+
+}
+
+.familia div{
+    background-color: white;
+    color: grey;
+    margin: 20px 20px;   
+
+    
+}
+
+div.fixa{
+    color:rgb(255, 25, 0);
+    border: 5px solid rgb(14, 161, 247);
+    background-color: rgb(20, 202, 111);
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    position: fixed;
+    right: calc(50% - 20px);
+    bottom: 20px ;
+
+}
