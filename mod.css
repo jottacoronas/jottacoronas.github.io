@@ -1,0 +1,42 @@
+
+
+.barra{
+    background-color: rgb(65, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    height: 80px;
+    border-bottom: 8px solid #d35f5f;
+    position: fixed;
+    width: 100%;
+}
+
+.barra div{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 15px;
+}
+
+.barra a{
+    color: #d35f5f;
+    padding: 10px 5px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    
+}
+
+.barra a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.barra img{
+    height: 50px;
+
+}
+
