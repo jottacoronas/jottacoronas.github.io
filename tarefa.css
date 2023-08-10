@@ -1,3 +1,5 @@
+
+
 .body{
     margin: 0;
     margin-top: 80px;
@@ -10,8 +12,41 @@
     width: 100%;
     position: fixed;
     top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 
   
+}
+
+.navbar > a, .dropdown, .dropdown a{
+    background-color: darkorange;
+    padding: 10px;
+    border-radius: 4px;
+    color: black;
+}
+
+.navbar a:hover{
+    background-color: rgb(241, 201, 152);
+}
+
+.dropdown{
+    display: none;
+}
+
+.dropdown div{
+    border-radius: 4px;
+    background-color: darkorange;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.dropdown:hover div{
+    display: block;
+    display: flex;
 }
 
 .corpo{
@@ -19,6 +54,7 @@
     margin: 0px 30px;
     justify-content: right;
     margin-top: 110px;
+
    
 }
 
@@ -35,3 +71,35 @@
     background-color: yellow;
     width: calc(100% - 230px);
 }
+
+@media (max-width: 800px){
+
+
+    .lateral{
+        display: none;
+    }
+
+    .main{
+        width: 100%;
+    }
+    
+    
+}
+
+@media (max-width: 500px){
+
+    .navbar > a{
+        display: none;
+
+    }
+
+    .dropdown{
+        display: block;
+    }
+
+
+}
+
+
+
+
