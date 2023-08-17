@@ -1,0 +1,15 @@
+.navbar{
+    background-color: rgb(141, 136, 136);
+    display: flex;
+    position: fixed;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.dropdown{
+    background-color: rgb(141, 136, 136);
+  
+    flex-direction: column;
+    justify-content: left;
+}
