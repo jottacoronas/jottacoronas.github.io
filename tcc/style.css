@@ -79,6 +79,7 @@ nav ul li:hover{
 ul a{
     color: gold;
     text-decoration: none;
+
 }
 
 .logo>a{
@@ -140,10 +141,7 @@ header{
 
 }
 
-.header-bottom-side-right img{
-    width: 80%;
-    
-}
+
 
 @media (max-width: 800px){
     .logo{
@@ -159,6 +157,7 @@ header{
         flex-direction: column;
         text-align: center;
         padding-top: 4rem;
+        
     }
 
     nav{
@@ -183,5 +182,145 @@ header{
 
     }
 
+    .header-bottom-side-right img{
+        width: 100%;
+        border-radius: 50px;
+        margin-top: 50px;
 
+    }
+
+   
+
+
+
+}
+
+.slider{
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 1s;
+}
+
+.slide img{
+    width: 800px;
+    height: 100%;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.manual-btn:hover{
+    background-color: white;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+.navigation-auto div{
+    border: 2px solid rgb(208, 69, 92);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: white;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: white;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: white;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: white;
+}
+
+.types{
+    display: flex;
+    height: 400px;
+    padding: 2rem;
+    justify-content: center;
+    gap: 2rem;
+    
+}
+
+.types a{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+#type-1{
+    background-image: url("mulheres.png");
+    
+}
+
+#type-2{
+    background-color: red;
+}
+
+#type-3{
+    background-color: purple;
+}
+
+#type-1:hover{
+    background-size: 80%;
 }

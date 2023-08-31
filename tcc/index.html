@@ -6,8 +6,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="icon" href="icon.jpg">
   <link rel="stylesheet"
   href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <script src="script.js" defer></script>
     <title>Katia Atelie</title>
 </head>
 
@@ -35,15 +37,51 @@
         <div class="header-inner-contet">
             <div class="header-bottom-side">
                 <div class="header-bottom-side-left">
-                    <h2>As Melhores e Mais Divertidas Fantasias do Rio Grande do Sul</h2>
+                    <h2>As Melhores e Mais Divertidzas Fantasias do Rio Grande do Sul</h2>
                     <p>
                         Somos apaixonados por transformar sonhos em realidade e dar vida a personagens de todas as eras e universos. Seja para festas temáticas, eventos especiais, apresentações teatrais ou simplesmente para aqueles momentos em que você deseja escapar da realidade, a Kátia Atelie é o lugar onde a magia acontece.
                     </p>
                     <button>Acesse já &#8594;</button>
                 </div>
                 <div class="header-bottom-side-right">
-                    <img src="template.jpg" alt="bebemario">
-                </div>
+                    <div class="slider">
+                        <div class="slides">
+                
+                            <input type="radio" name="radio-btn" id="radio1">
+                            <input type="radio" name="radio-btn" id="radio2">
+                            <input type="radio" name="radio-btn" id="radio3">
+                            <input type="radio" name="radio-btn" id="radio4">
+                            
+                            <div class="slide first">
+                                <img src="img1.jpg" alt="Imagem 1">
+                            </div>
+                            <div class="slide">
+                                <img src="img2.jpg" alt="Imagem 2">
+                            </div>
+                            <div class="slide">
+                                <img src="img3.jpg" alt="Imagem 3">
+                            </div>
+                            <div class="slide">
+                                <img src="img4.jpg" alt="Imagem 4">
+                            </div>
+                
+                            <div class="navigation-auto">
+                                <div class="auto-btn1"></div>
+                                <div class="auto-btn2"></div>
+                                <div class="auto-btn3"></div>
+                                <div class="auto-btn4"></div>
+                            </div>
+                
+                        </div>
+                
+                        <div class="manual-navigation">
+                            <label for="radio1" class="manual-btn"></label>
+                            <label for="radio2" class="manual-btn"></label>
+                            <label for="radio3" class="manual-btn"></label>
+                            <label for="radio4" class="manual-btn"></label>
+                        </div>
+                
+                    </div>
 
             </div>
 
@@ -59,6 +97,12 @@
         })
 </script>
 
+    <div class="types">
+        <a href="#" id="type-1"></a>
+        <a href="#" id="type-2">Homens</a>
+        <a href="#" id="type-3">Crianças</a>
+
+    </div>
 
 </body>
 
