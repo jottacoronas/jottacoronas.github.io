@@ -14,7 +14,7 @@
 
 <body>
     
-    <div class="navbar">
+    <div class="navbar show-menu">
         <div class="header">
             <h1 class="logo"><a href="index.html"><i class='bx bxs-crown'></i> KÁTIA CORONAS</a></h1>
             <nav>
@@ -24,11 +24,41 @@
                     <li><a href="contatos.html">Contatos</a></li> 
                 </ul>
             </nav>
-            <div class="icon">
+            <div class="menu-button">
                 <i class='bx bx-menu'></i>
             </div>
         </div>
     </div>
+
+
+    <header>
+        <div class="header-inner-contet">
+            <div class="header-bottom-side">
+                <div class="header-bottom-side-left">
+                    <h2>As Melhores e Mais Divertidas Fantasias do Rio Grande do Sul</h2>
+                    <p>
+                        Somos apaixonados por transformar sonhos em realidade e dar vida a personagens de todas as eras e universos. Seja para festas temáticas, eventos especiais, apresentações teatrais ou simplesmente para aqueles momentos em que você deseja escapar da realidade, a Kátia Atelie é o lugar onde a magia acontece.
+                    </p>
+                    <button>Acesse já &#8594;</button>
+                </div>
+                <div class="header-bottom-side-right">
+                    <img src="template.jpg" alt="bebemario">
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <script>
+        const navbar = document.querySelector(".navbar");
+        const menuButton = document.querySelector(".menu-button");
+
+        menuButton.addEventListener("click", () => {
+            navbar.classList.toggle("show-menu");
+        })
+</script>
+
 
 </body>
 
