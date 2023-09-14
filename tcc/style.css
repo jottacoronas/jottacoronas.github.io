@@ -296,10 +296,13 @@ ul a{
     background-color: #ffec74;
   }
 
+  /* Fleet */
+
 .fleet {
     border-top: 2px solid #edb700;
     display: inline-flex;
     width: 100%;
+    margin-bottom: 60px;
 }
 
 .fleet img{
@@ -344,6 +347,10 @@ ul a{
     padding: 5px;
 }
 
+/* Fleet */
+
+/* Parte de Baixo */
+
 .main-bottom{
    background-color: #111c24;
    border-top: 2px solid #edb700;
@@ -355,11 +362,10 @@ ul a{
     
 }
 
-
-
 .main-navegation{
-    margin-left: 200px;
+    margin-left: 150px;
     padding: 30px;
+    margin-top: 50px;
 
 }
 
@@ -377,17 +383,25 @@ ul a{
 .main_list_navegation a{
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
+    
+}
+
+.main_list_navegation a:hover{
+    color: #edb700;
+    border: 2px solid #edb700;
+    padding: 5px;
 }
 
 .main_list_navegation li{
     list-style: none;
-    margin-top: 20px;
+    margin-top: 20px;    
     
 }
 
 .main-cotacao{
     padding: 30px;
+    margin-top: 50px;
 }
 
 .main-cotacao h2{
@@ -398,6 +412,7 @@ ul a{
     line-height: 18px;
     margin-bottom: 36px;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 .main_list_cotacao{
@@ -410,3 +425,302 @@ ul a{
     color: #edb700;
 }
 
+.main-contato{
+    padding: 30px;
+    margin-top: 50px;
+}
+
+
+.main-contato h2{
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 18px;
+    margin-bottom: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main_list_contato{
+    color: #fff;
+    width: 300px;
+    margin-bottom: 17px;
+    
+}
+
+.main-contato span{
+    color: grey;
+}
+
+.main-contato a{
+    text-decoration: none;
+    color: #edb700;
+}
+
+.main-imagem{
+    padding: 30px;
+    margin-top: 50px;
+    
+}
+
+.inovatransportes{
+    padding: 50px;
+    color: #fff;
+    background: rgb(237,183,0);
+    background: linear-gradient(0deg, rgba(237,183,0,1) 18%, rgba(17,28,36,1) 45%);
+}
+
+.text-low{
+    color: #fff;
+    background: rgb(237,183,0);
+    padding-left: 200px;
+    padding-bottom: 20px;
+}
+
+/* Parte de Baixo */
+
+/* Contato */
+
+.main-help-contato{
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    display: inline-flex;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    width: 500px;
+    background-color: #111c24;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+section h2{
+    color: #fff;
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+
+section form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+section label{
+    color: #fff;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+section input{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+
+}
+
+form input:focus{
+    border-radius: 10px;
+}
+
+form textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+
+form textarea:focus{
+    border-radius: 10px;
+}
+
+form button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+
+form button:hover{
+    color: #111c24;
+    background-color: #edb700;
+    border-radius: 10px;
+}
+
+/* Contato*/
+
+/* Matriz*/
+
+.text_help_contato{
+    padding: 50px;
+    margin-left: 300px;
+    
+}
+
+
+.ul_help{
+    list-style: none;
+    margin-top: 15px;
+    font-size: 17px;
+}
+
+.bx{
+    color: #edb700;
+    margin-bottom: 30px;
+}
+
+
+
+.ul_help a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}
+
+.ul_help a:hover{
+    color: #edb700;
+}
+/* Matriz */
+
+/* Empresa */
+
+/* Main Empresa */
+
+.main_empresa{
+    padding-top: 50px;
+    padding-left: 50px;
+    margin-left: 100px;
+    display: inline-flex;
+}
+
+.empresa_paragrafos{
+    width: 800px;
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+
+.empresa_paragrafos h1{
+    color: #111c24;
+}
+
+.empresa_image img{
+    max-width: 100%;
+    height: auto;
+    margin-left: 30px;
+}
+
+.par1{
+    margin-top: 17px;
+    margin-bottom: 30px;
+}
+
+.par2{
+    margin-bottom: 30px;
+}
+
+.par3{
+    margin-bottom: 30px;
+}
+
+.par4{
+    margin-bottom: 30px;
+}
+
+
+
+/* Main Empresa*/
+
+/* Missao Empresa */
+
+.main_list_empresa{
+    margin-left: 100px;
+    padding: 50px;
+    display: inline-flex;
+}
+
+/* Missao */
+
+.missao_empresa{
+    width: 400px;
+}
+
+.title_missao{
+    display: inline-flex;
+    margin-bottom: 20px;
+    
+}
+
+
+.title_missao h2{
+    color: #111c24;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.par_mis1{
+    font-size: 17px;
+}
+
+/* Missao */
+
+/* Visao */
+
+.visao_empresa{
+    width: 400px;
+}
+
+.title_visao{
+    display: inline-flex;
+    margin-bottom: 20px;
+}
+
+.title_visao h2{
+    color: #111c24;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.par_vis1{
+    font-size: 17px;
+}
+
+/* Visao */
+
+/* Valores */
+
+.valores_empresa{
+    width: 400px;
+    margin-left: 20px;
+}
+
+.title_valores{
+    display: inline-flex;
+    margin-bottom: 20px;
+}
+
+.title_valores h2{
+    color: #111c24;
+    margin-left: 10px;
+    text-align: center;
+}
+
+/* Valores */
+
+
+/*  Missao Empresa */
+
+/* Empresa */
