@@ -8,15 +8,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-image: url(img/fundo-site.gif);
-    
-}
 
-@media (max-width: 800px){
-    .menu_type{
-        display: none;
-    }
-
-    
 }
 
 /* Header */
@@ -40,14 +32,6 @@ body{
     border-top: solid 12px #edb700;
 
     
-}
-
-.header a{
-    color: #fff;
-}
-
-.menu-navbar{
-    display: none;
 }
 
 .navbar.roll{
@@ -94,20 +78,19 @@ nav ul li{
 
 
 nav ul a:hover{
-    /*transform: translate(-5px);*/
+    transform: translate(-5px);
     transition: all 0.2s;
     border: 2px solid #edb700;
     color: #edb700;
 
 }
 
-nav ul a{
+ul a{
     color: #fff;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     font-weight: 700;
-    border: 2px solid rgba(0, 0, 0, 0);
 }
 
 .header img{
@@ -401,7 +384,7 @@ nav ul a{
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    text-decoration: none;
+    
 }
 
 .main_list_navegation a:hover{
