@@ -8,16 +8,9 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-image: url(img/fundo-site.gif);
-    
+
 }
 
-@media (max-width: 800px){
-    .menu_type{
-        display: none;
-    }
-
-    
-}
 
 /* Header */
 
@@ -68,8 +61,8 @@ body{
 nav ul li a{
     position: relative;
     display: block;
-    padding: 6px 8px 6px 8px;
-    margin: 37px 10px 32px;
+    padding: 6px 12px 30px 12px;
+    margin-top: 10px;
     line-height: 10px;
     text-transform: uppercase;
     cursor: pointer;
@@ -93,13 +86,29 @@ nav ul li{
 }
 
 
-nav ul a:hover{
-    /*transform: translate(-5px);*/
-    transition: all 0.2s;
-    border: 2px solid #edb700;
-    color: #edb700;
-
+nav ul a::before{
+    content: "";
+    border-bottom: 2px solid #edb700;
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    transition: transform 300ms ease;
+    transform-origin: right;
+    transform: scaleX(0);
 }
+
+nav ul a:hover::before{
+    transform: scaleX(1);
+    cursor: pointer;
+    transform-origin: left;
+}
+
+nav ul a:hover{
+    color: #edb700;
+}
+
+
 
 nav ul a{
     color: #fff;
@@ -116,7 +125,170 @@ nav ul a{
     margin-top: -1px;
     max-height: 100px;
     max-width: 220px;
+    
 }
+
+
+/*.header {
+    position: sticky;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111c24;
+    padding: 0 25px;
+    transition: 0.3s;
+    border-top: 10px solid #edb700;
+}
+
+.header.roll{
+    background: rgba(17, 28,36,0.9);
+    border-top: none;
+}
+
+.logo a{
+    display: block;
+}
+
+.logo a img{
+     display: block;
+     width: 100%;
+}
+
+.navegation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+    transition: 0.5s;
+    
+}
+
+.menu li{
+    list-style-type: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 40px 25px;
+    font-size: 18px;
+    line-height: 1;
+    transition: 0.3s;
+}
+
+.menu li a:hover {
+    box-shadow: 0 -5px 0px #fff inset;
+    padding: 35px 25px 45px 25px;
+}
+
+.hamburguer {
+    position: relative;
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.hamburguer:before,
+.hamburguer:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    right: 0;
+    background: #fff;
+    border-radius: 10px;
+    transition: 0.3s; 
+}
+
+.hamburguer:before{
+    top: -10px;
+    width: 20px;
+}
+
+.hamburguer:after{
+    top: 10px;
+    width: 25px;
+}
+
+.toggle-menu{
+    position: absolute;
+    width: 30px;
+    height: 100%;
+    z-index: 3;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.hamburguer,
+.toggle-menu {
+   display: none;
+}
+
+.navegation input:checked ~ .hamburguer{
+    background: transparent;
+}
+
+.navegation input:checked ~ .hamburguer:before{
+    top: 0;
+    transform: rotate(-45deg);
+    width: 30px;
+    background-color: #edb700;
+}
+
+.navegation input:checked ~ .hamburguer:after{
+    top: 0;
+    transform: rotate(45deg);
+    width: 30px;
+    background-color: #edb700;
+}
+
+.navegation input:checked ~ .menu{
+    right: 0;
+    box-shadow: -20px 0 40px rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width: 992px) {
+    .hamburguer,
+    .toggle-menu{
+        display: block;
+    }
+    .header {
+        padding: 10px 20px;
+    }
+    .menu{
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        background: #111c24;
+        width: 300px;
+        height: 100%;
+        padding: 65px;
+        margin-top: 10px;
+    }
+    .menu li{
+        width: 100%;
+    }
+
+    .menu li a{
+        padding: 30px;
+        font-size: 24px;
+        box-shadow: 0 1px 0 rgba(17,28,36,0.1);
+    }
+}*/
 
 /* Header */
 
@@ -317,9 +489,10 @@ nav ul a{
 
 .fleet {
     border-top: 2px solid #edb700;
-    display: inline-flex;
+    display: flex;
     width: 100%;
     margin-bottom: 60px;
+    
 }
 
 .fleet img{
@@ -401,7 +574,8 @@ nav ul a{
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    text-decoration: none;
+    
+    
 }
 
 .main_list_navegation a:hover{
@@ -739,5 +913,101 @@ form button:hover{
 
 
 /*  Missao Empresa */
+
+/* CARDS */
+
+.cards_empresa{
+    border-top: 2px solid #edb700;
+    padding: 50px;
+    display: flex;
+    gap: 100px;
+    justify-content: space-around;
+    border-bottom: 2px solid #edb700;
+}
+
+.card_emp1{
+    color: #edb700;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    padding: 25px;
+    height: 300px;
+    width: 200px;
+    text-align: center;
+    background: #111c24;
+}   
+
+.card_emp1 span{
+    color: #edb700;
+}
+
+.truck-image img{
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 20px;
+    
+}
+
+.card_emp1 p{
+    color: #fff;
+    margin-top: 80px;
+    text-align: center;
+    width: 100%;
+    background: black;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.card_emp1 p:hover{
+    cursor: pointer;
+    font-size: 18px;
+    background: #111c24;
+    color: #edb700;
+}
+
+/* CARDS */
+
+/* BUSINESS EMPRESA */
+
+.business_inova{
+    padding: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
+
+.business_inova h2{
+    margin-bottom: 20px;
+    font-size: 34px;
+    color: #111c24;
+}
+
+.images_business{
+    display: table;
+}
+
+.row_images_business .coluna{
+    float: left;
+    width: 33.33%;
+    padding-top: 20px;
+}
+
+.row_images_business::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width: 992px) {
+    .row_images_business .coluna{
+        width: 100%;
+    }
+}
+
+/* BUSINESS EMPRESA */
+
+
 
 /* Empresa */
